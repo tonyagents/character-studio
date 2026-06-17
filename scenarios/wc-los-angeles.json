@@ -1,0 +1,271 @@
+{
+  "name": "wc-los-angeles",
+  "durationSeconds": 12,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "accentColor": "#7D00FF",
+  "background": {
+    "colors": [
+      "#4aa8e8",
+      "#8ecdf5",
+      "#ffe3ad",
+      "#ffb46e"
+    ],
+    "sun": true,
+    "skyline": "la",
+    "horizon": 51,
+    "ground": "#b89a62",
+    "vignette": true,
+    "confetti": {
+      "from": 7.4,
+      "colors": [
+        "#1f3a93",
+        "#ffffff",
+        "#d0312d",
+        "#1f3a93"
+      ]
+    }
+  },
+  "camera": [
+    {
+      "at": 0,
+      "position": [
+        0,
+        1.9,
+        9
+      ],
+      "lookAt": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "at": 4.5,
+      "position": [
+        0.5,
+        1.6,
+        7.2
+      ],
+      "lookAt": [
+        0,
+        1,
+        0.5
+      ]
+    },
+    {
+      "at": 8,
+      "position": [
+        -0.4,
+        1.7,
+        7.6
+      ],
+      "lookAt": [
+        0,
+        1,
+        0.5
+      ]
+    },
+    {
+      "at": 12,
+      "position": [
+        0,
+        2.2,
+        8.4
+      ],
+      "lookAt": [
+        0,
+        1,
+        0
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "model": "man_beach",
+      "animLib": "animlib",
+      "clip": "Walk",
+      "beer": "right",
+      "position": [
+        -3.5,
+        0,
+        1.3
+      ],
+      "rotationY": 90,
+      "from": 0,
+      "to": 2.4,
+      "moveTo": {
+        "position": [
+          -0.55,
+          0,
+          1.3
+        ],
+        "startAt": 0,
+        "endAt": 2.4
+      }
+    },
+    {
+      "model": "man_beach",
+      "animLib": "animlib",
+      "clip": "Idle_Neutral",
+      "beer": "right",
+      "position": [
+        -0.55,
+        0,
+        1.3
+      ],
+      "rotationY": 30,
+      "from": 2.4,
+      "to": 7.4
+    },
+    {
+      "model": "man_beach",
+      "animLib": "animlib",
+      "clip": "Wave",
+      "beer": "right",
+      "position": [
+        -0.55,
+        0,
+        1.3
+      ],
+      "rotationY": 20,
+      "from": 7.4,
+      "to": 12
+    },
+    {
+      "model": "woman_punk",
+      "animLib": "animlib",
+      "clip": "Idle_Neutral",
+      "beer": "left",
+      "position": [
+        0.55,
+        0,
+        1.2
+      ],
+      "rotationY": -25,
+      "timeOffset": 0.8,
+      "from": 0,
+      "to": 7.4
+    },
+    {
+      "model": "woman_punk",
+      "animLib": "animlib",
+      "clip": "Punch_Right",
+      "beer": "left",
+      "position": [
+        0.55,
+        0,
+        1.2
+      ],
+      "rotationY": -15,
+      "from": 7.4,
+      "to": 12
+    },
+    {
+      "model": "palmtree_1",
+      "position": [
+        -2.5,
+        0,
+        -0.8
+      ],
+      "scale": 3
+    },
+    {
+      "model": "palmtree_3",
+      "position": [
+        2.6,
+        0,
+        -1.6
+      ],
+      "scale": 2.7
+    },
+    {
+      "model": "palmtree_1",
+      "position": [
+        -3.4,
+        0,
+        -4.5
+      ],
+      "scale": 3.2,
+      "rotationY": 120
+    },
+    {
+      "model": "rock_1",
+      "position": [
+        1.9,
+        0,
+        2.4
+      ],
+      "scale": 0.45
+    }
+  ],
+  "crowd": {
+    "count": 16,
+    "models": [
+      "man_punk",
+      "woman_casual",
+      "man_casual2",
+      "woman_punk",
+      "man_beach",
+      "woman_worker",
+      "man_worker",
+      "woman_formal"
+    ],
+    "clips": [
+      "Idle_Neutral",
+      "Wave",
+      "Idle_Neutral",
+      "Interact"
+    ],
+    "animLib": "animlib",
+    "beerChance": 0.65,
+    "center": [
+      0,
+      0,
+      -0.5
+    ],
+    "innerRadius": 2.8,
+    "outerRadius": 6.5,
+    "arcStart": 115,
+    "arcEnd": 245,
+    "seed": "la-fest",
+    "scaleMin": 0.92,
+    "scaleMax": 1.04
+  },
+  "texts": [
+    {
+      "text": "LOS ANGELES 🇺🇸 FAN FEST",
+      "from": 0.5,
+      "to": 3.2,
+      "variant": "badge",
+      "place": "bottom"
+    },
+    {
+      "text": "Cheers! 🍻",
+      "from": 7.6,
+      "to": 9.6,
+      "variant": "title",
+      "place": "bottom"
+    },
+    {
+      "text": "Trade the World Cup on MoonAgents 🌙",
+      "from": 9.8,
+      "to": 12,
+      "variant": "badge",
+      "place": "bottom"
+    }
+  ],
+  "markets": [
+    {
+      "question": "USA to top their group?",
+      "from": 2.4,
+      "to": 11.6,
+      "yesStart": 51,
+      "yesEnd": 77,
+      "winAt": 7.4,
+      "payout": "+$305",
+      "place": "top"
+    }
+  ]
+}
