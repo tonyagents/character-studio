@@ -1,0 +1,36 @@
+{
+  "name": "rocket-launch",
+  "durationSeconds": 10,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "accentColor": "#7D00FF",
+  "background": {
+    "colors": ["#07021f", "#2a0a6e", "#6c16e0"],
+    "stars": true,
+    "moon": true,
+    "vignette": true,
+    "ground": "#1a0b3d",
+    "confetti": {"from": 3.0, "colors": ["#7D00FF", "#ffffff", "#b57bff"]}
+  },
+  "camera": [
+    {"at": 0, "position": [0, 1.5, 6.2], "lookAt": [0, 1.6, 0]},
+    {"at": 4, "position": [0.3, 1.9, 6.6], "lookAt": [0, 2.1, -0.4]},
+    {"at": 10, "position": [0.4, 1.7, 6.2], "lookAt": [0.2, 1.4, 0.3]}
+  ],
+  "characters": [
+    {
+      "model": "rocket",
+      "position": [-0.55, 0, -1.2],
+      "scale": 2.4,
+      "moveTo": {"position": [-0.55, 14, -1.2], "startAt": 2.6, "endAt": 6.2}
+    },
+    {"model": "robot", "clip": "Wave", "position": [0.6, 0, 1.0], "rotationY": -20, "from": 0, "to": 2.6},
+    {"model": "robot", "clip": "Jump", "position": [0.6, 0, 1.0], "rotationY": -20, "from": 2.6, "to": 4.6},
+    {"model": "robot", "clip": "Dance", "position": [0.6, 0, 1.0], "rotationY": -20, "from": 4.6, "to": 10}
+  ],
+  "texts": [
+    {"text": "MOONPAY", "from": 0.4, "to": 2.8, "variant": "badge", "place": "top"},
+    {"text": "TO THE MOON", "from": 3.2, "to": 9.5, "variant": "title", "place": "top"}
+  ]
+}

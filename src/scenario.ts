@@ -73,6 +73,22 @@ export type TextSpec = {
   color?: string;
 };
 
+export type AutomationSpec = {
+  /** Card title, e.g. "Price Alert" */
+  title: string;
+  /** Status line before the trigger fires, e.g. "Active · Next run 10:30" */
+  status: string;
+  from: number;
+  to: number;
+  /** Seconds (absolute) when the card flips from status to result */
+  triggerAt?: number;
+  /** Result line shown after triggerAt, e.g. "SOL crossed $210" */
+  result?: string;
+  /** Footer line, defaults to the observe-only disclosure */
+  footer?: string;
+  place?: 'top' | 'bottom';
+};
+
 export type MarketSpec = {
   /** Market question, e.g. "Mexico to win Group A?" */
   question: string;
@@ -118,4 +134,5 @@ export type Scenario = {
   crowd?: CrowdSpec;
   texts: TextSpec[];
   markets?: MarketSpec[];
+  automations?: AutomationSpec[];
 };

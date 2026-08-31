@@ -9,6 +9,7 @@ import {Character} from './Character';
 import {Crowd} from './Crowd';
 import {Overlays} from './Overlays';
 import {Markets} from './MarketCard';
+import {Automations} from './AutomationCard';
 
 export const Main: React.FC<Scenario> = (scenario) => {
   const {width, height} = useVideoConfig();
@@ -36,6 +37,12 @@ export const Main: React.FC<Scenario> = (scenario) => {
       <Overlays texts={scenario.texts} accent={scenario.accentColor ?? '#7D00FF'} />
       {scenario.markets?.length ? (
         <Markets markets={scenario.markets} accent={scenario.accentColor ?? '#7D00FF'} />
+      ) : null}
+      {scenario.automations?.length ? (
+        <Automations
+          automations={scenario.automations}
+          accent={scenario.accentColor ?? '#7D00FF'}
+        />
       ) : null}
     </AbsoluteFill>
   );
