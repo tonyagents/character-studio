@@ -2,10 +2,10 @@ import React from 'react';
 import {Composition} from 'remotion';
 import {Main} from './Video';
 import {LostKidFilm, TOTAL_SECONDS} from './LostKidFilm';
-import {MoongateFilm, MOONGATE_DURATION_FRAMES} from './MoongateFilm';
+import {NovaGateFilm, NOVAGATE_DURATION_FRAMES} from './NovaGateFilm';
 import {NarrativesFilm, NARRATIVES_DURATION_FRAMES} from './NarrativesFilm';
 import type {Scenario} from './scenario';
-import demo from '../scenarios/moonpay-launch.json';
+import demo from '../scenarios/nova-launch.json';
 
 export const Root: React.FC = () => {
   return (
@@ -19,9 +19,9 @@ export const Root: React.FC = () => {
       height={1080}
     />
     <Composition
-      id="MoongateFilm"
-      component={MoongateFilm}
-      durationInFrames={MOONGATE_DURATION_FRAMES}
+      id="NovaGateFilm"
+      component={NovaGateFilm}
+      durationInFrames={NOVAGATE_DURATION_FRAMES}
       fps={30}
       width={1920}
       height={1080}

@@ -39,6 +39,6 @@
     {"text": "MEET YOUR AGENT", "from": 4.2, "to": 6.6, "variant": "title", "place": "top"},
     {"text": "It handles the money stuff", "from": 6.9, "to": 9.2, "variant": "subtitle", "place": "bottom"},
     {"text": "SO HE CAN JUST BE A KID", "from": 9.6, "to": 13.2, "variant": "title", "place": "top"},
-    {"text": "MOONAGENTS", "from": 11.5, "to": 14, "variant": "badge", "place": "bottom"}
+    {"text": "NOVAAGENTS", "from": 11.5, "to": 14, "variant": "badge", "place": "bottom"}
   ]
 }

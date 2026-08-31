@@ -11,7 +11,7 @@ import {
 } from 'remotion';
 
 // "Lost kid + agent" film: 4 Seedance shots back-to-back with an
-// iMessage-style MoonPay agent thread composited on top.
+// iMessage-style Nova agent thread composited on top.
 
 const FPS = 30;
 const SHOTS = [
@@ -184,7 +184,7 @@ const EndCard: React.FC = () => {
       }}
     >
       <div style={{fontFamily: FONT, fontSize: 96, fontWeight: 800, letterSpacing: 6, color: 'white'}}>
-        M<span style={{color: '#7D00FF'}}>OO</span>NPAY
+        N<span style={{color: '#7D00FF'}}>OV</span>A
       </div>
       <div style={{fontFamily: FONT, fontSize: 42, color: 'rgba(255,255,255,0.85)'}}>
         Agents that handle the money stuff.

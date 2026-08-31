@@ -30,7 +30,7 @@
     {"model": "robot", "clip": "Dance", "position": [0.6, 0, 1.0], "rotationY": -20, "from": 4.6, "to": 10}
   ],
   "texts": [
-    {"text": "MOONPAY", "from": 0.4, "to": 2.8, "variant": "badge", "place": "top"},
+    {"text": "NOVA", "from": 0.4, "to": 2.8, "variant": "badge", "place": "top"},
     {"text": "TO THE MOON", "from": 3.2, "to": 9.5, "variant": "title", "place": "top"}
   ]
 }

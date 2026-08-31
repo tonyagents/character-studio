@@ -1,4 +1,4 @@
-"""Build a stylized MoonPay rocket and export it as public/models/rocket.glb.
+"""Build a stylized Nova rocket and export it as public/models/rocket.glb.
 
 Run:  blender --background --python tools/make_rocket.py -- public/models/rocket.glb
 
@@ -10,7 +10,7 @@ import sys
 
 import bpy
 
-MOONPAY_PURPLE = (0.49, 0.0, 1.0, 1.0)
+NOVA_PURPLE = (0.49, 0.0, 1.0, 1.0)
 WHITE = (0.92, 0.92, 0.95, 1.0)
 DARK = (0.12, 0.12, 0.16, 1.0)
 FLAME = (1.0, 0.45, 0.05, 1.0)
@@ -39,7 +39,7 @@ def assign(mat):
 bpy.ops.wm.read_factory_settings(use_empty=True)
 
 m_body = make_mat("body", WHITE, metallic=0.3, rough=0.35)
-m_purple = make_mat("purple", MOONPAY_PURPLE, metallic=0.2, rough=0.4)
+m_purple = make_mat("purple", NOVA_PURPLE, metallic=0.2, rough=0.4)
 m_dark = make_mat("dark", DARK, metallic=0.6, rough=0.5)
 m_flame = make_mat("flame", FLAME, emission=FLAME, strength=1.8)
 m_window = make_mat("window", WINDOW, emission=WINDOW, strength=2.0)

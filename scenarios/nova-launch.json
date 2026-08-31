@@ -1,5 +1,5 @@
 {
-  "name": "moonpay-launch",
+  "name": "nova-launch",
   "durationSeconds": 9,
   "fps": 30,
   "width": 1080,
@@ -23,7 +23,7 @@
   "texts": [
     {"text": "gm ☀️", "from": 0.4, "to": 2.6, "variant": "subtitle", "place": "top"},
     {"text": "Buy crypto in seconds", "from": 3.0, "to": 6.2, "variant": "title", "place": "top"},
-    {"text": "MoonPay", "from": 6.4, "to": 9, "variant": "title", "place": "top"},
-    {"text": "moonpay.com", "from": 6.8, "to": 9, "variant": "badge", "place": "bottom"}
+    {"text": "Nova", "from": 6.4, "to": 9, "variant": "title", "place": "top"},
+    {"text": "nova.com", "from": 6.8, "to": 9, "variant": "badge", "place": "bottom"}
   ]
 }

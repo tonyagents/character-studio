@@ -1,4 +1,4 @@
-"""Build a stylized MoonPay-purple piggy bank with a gold coin in the slot.
+"""Build a stylized Nova-purple piggy bank with a gold coin in the slot.
 
 Run:  blender --background --python tools/make_piggybank.py -- public/models/piggybank.glb
 

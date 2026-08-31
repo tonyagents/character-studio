@@ -1,5 +1,5 @@
 {
-  "name": "moonagents-automations",
+  "name": "novaagents-automations",
   "durationSeconds": 20,
   "fps": 30,
   "width": 1080,
@@ -29,7 +29,7 @@
     {"text": "You shouldn't have to ask twice.", "from": 3.2, "to": 8.8, "variant": "title", "place": "top"},
     {"text": "Visible. Testable. In your control.", "from": 9.2, "to": 12.6, "variant": "subtitle", "place": "top"},
     {"text": "3 observe-only templates.", "from": 12.8, "to": 16, "variant": "subtitle", "place": "top"},
-    {"text": "MoonAgents", "from": 16.4, "to": 20, "variant": "title", "place": "top"},
+    {"text": "NovaAgents", "from": 16.4, "to": 20, "variant": "title", "place": "top"},
     {"text": "Open Automations", "from": 17, "to": 20, "variant": "badge", "place": "bottom"}
   ],
   "automations": [

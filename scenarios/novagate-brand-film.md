@@ -1,4 +1,4 @@
-# Moongate Brand Film — "BULK"-style teaser
+# NovaGate Brand Film — "BULK"-style teaser
 
 Reference: ~10s looping brand film. Fast-cut montage of cinematic/archival-texture
 shots with accelerating tempo → calm wide logo end card. Serif kinetic copy over
@@ -16,9 +16,9 @@ Reference cut structure (from screen recording):
 9. 0:09–0:10 — aerial ocean foam (bleached film look)
 10. end card — calm dark ocean + aurora, serif logo "✳ BULK" centered
 
-## Moongate version — shot list + Seedance prompts
+## NovaGate version — shot list + Seedance prompts
 
-Brand: Moongate — token/stock basket trading app. Dark UI, purple (#A855F7-ish)
+Brand: NovaGate — token/stock basket trading app. Dark UI, purple (#A855F7-ish)
 accent. Tone: cosmic, gate/portal, "the market as a force of nature."
 All clips: 16:9, 4–5s each (we cut to ~1s each in the edit), heavy 16mm film
 grain, no on-screen text baked in (text added in post).
@@ -68,8 +68,8 @@ centered logo" (5s, this one runs long under the logo)
   S8 0.8s → S9 hold ~3.5s with logo fade-in. Total ≈ 11–12s, loopable.
 - Kinetic serif copy (added in Remotion, editorial serif, white):
   "Every market." (over S3) / "Every signal." (over S5) / "One gate." (over S8)
-- End card: "◗ moongate" wordmark centered over S9 (white serif or brand mark
-  from ~/Desktop/moongate assets), slow fade.
+- End card: "◗ novagate" wordmark centered over S9 (white serif or brand mark
+  from ~/Desktop/novagate assets), slow fade.
 - Grade: unify with slight grain + vignette; audio: low ambient drone + riser
   into a soft hit on the logo (Seedance native audio off; add music in post).
 
@@ -77,20 +77,20 @@ centered logo" (5s, this one runs long under the logo)
 - Higgsfield MCP (preferred, user request): mcp.higgsfield.ai/mcp — Seedance 2.0,
   needs OAuth via /mcp in Claude Code.
 - Fallback: tools/seedance.mjs via fal.ai (FAL_KEY in ~/.claude/settings.json):
-  node tools/seedance.mjs "<prompt>" --aspect 16:9 --duration 5 --no-audio --out out/moongate/s1.mp4
+  node tools/seedance.mjs "<prompt>" --aspect 16:9 --duration 5 --no-audio --out out/novagate/s1.mp4
 
 ---
 
 # NarrativesFilm — "Trade the narrative" teaser (v1, Jul 2026)
 
-Story: narratives crafted through history → tradable on Moongate baskets.
-Reuses s1 (light leak), s9 (aurora plate), logo-white.png. 15.6s, 1920x1080.
+Story: narratives crafted through history → tradable on NovaGate baskets.
+Reuses s1 (light leak), s9 (aurora plate). 15.6s, 1920x1080.
 
 Cut: s1 light leak 1.0s → n1 cave 1.6s ("Narratives built tribes.") → n2 Rome
 1.6s ("Narratives built empires.") → n3 printing press 1.6s ("Narratives built
 nations.") → n4 phone glow 1.6s ("Narratives went viral.") → n5 chart pump 1.8s
 ("Now they move markets.") → baskets UI panel beat 2.4s ("Trade them. In one
-tap.") → s9 aurora end card 4.0s (logo + ✦ moongate + italic "Trade the
+tap.") → s9 aurora end card 4.0s (logo + ✦ novagate + italic "Trade the
 narrative.").
 
 N1 — cave: "Prehistoric cave interior lit by flickering torchlight, ancient
@@ -115,6 +115,8 @@ N5 — trading: "Cinematic shot of a huge dark trading screen, a green
 candlestick chart suddenly pumping vertically upward, streaming numbers and
 percentages, subtle purple glow, dramatic anamorphic lens, film grain"
 
-Product beat: public/footage/moongate/baskets-ui.png (720x376 app screenshot)
-as floating rounded panel over dark violet radial bg, slow 1.07x push-in.
-Render: npx remotion render src/index.ts NarrativesFilm out/moongate-narratives.mp4
+Product beat: CSS-built "baskets" panel mockup (no real product screenshot —
+the original render used a real app screenshot, replaced here with a
+generic mock for public release) over dark violet radial bg, slow 1.07x
+push-in.
+Render: npx remotion render src/index.ts NarrativesFilm out/novagate-narratives.mp4

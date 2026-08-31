@@ -63,7 +63,7 @@ const Card: React.FC<{spec: AutomationSpec; accent: string}> = ({spec, accent}) 
           🌙
         </div>
         <div style={{fontSize: 30, fontWeight: 700, letterSpacing: 0.5}}>
-          MoonAgents
+          NovaAgents
         </div>
         <div
           style={{

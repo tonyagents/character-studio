@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   AbsoluteFill,
-  Img,
   OffthreadVideo,
   Sequence,
   interpolate,
@@ -12,7 +11,7 @@ import {
 } from 'remotion';
 import {loadFont} from '@remotion/google-fonts/Lexend';
 
-// Moongate brand teaser, "BULK"-style: staccato Seedance montage with
+// NovaGate brand teaser, "BULK"-style: staccato Seedance montage with
 // accelerating tempo, serif kinetic copy, resolving on a calm aurora logo card.
 
 const FPS = 30;
@@ -26,22 +25,22 @@ type Shot = {
 };
 
 const SHOTS: Shot[] = [
-  {src: 'footage/moongate/s1.mp4', seconds: 1.0},
-  {src: 'footage/moongate/s2.mp4', seconds: 1.0},
-  {src: 'footage/moongate/s3.mp4', seconds: 1.5, text: 'Every market.'},
-  {src: 'footage/moongate/s4.mp4', seconds: 1.0},
-  {src: 'footage/moongate/s5.mp4', seconds: 1.0, text: 'Every signal.'},
+  {src: 'footage/novagate/s1.mp4', seconds: 1.0},
+  {src: 'footage/novagate/s2.mp4', seconds: 1.0},
+  {src: 'footage/novagate/s3.mp4', seconds: 1.5, text: 'Every market.'},
+  {src: 'footage/novagate/s4.mp4', seconds: 1.0},
+  {src: 'footage/novagate/s5.mp4', seconds: 1.0, text: 'Every signal.'},
   // whole child->elderly morph compressed into the 1s slot
-  {src: 'footage/moongate/s6.mp4', seconds: 1.0, rate: 4},
-  {src: 'footage/moongate/s7.mp4', seconds: 1.0},
+  {src: 'footage/novagate/s6.mp4', seconds: 1.0, rate: 4},
+  {src: 'footage/novagate/s7.mp4', seconds: 1.0},
   // start mid-clip so the cloud gate is already open
-  {src: 'footage/moongate/s8.mp4', seconds: 0.8, text: 'One gate.', from: 1.8},
-  {src: 'footage/moongate/s9.mp4', seconds: 4.2}, // end card plate
+  {src: 'footage/novagate/s8.mp4', seconds: 0.8, text: 'One gate.', from: 1.8},
+  {src: 'footage/novagate/s9.mp4', seconds: 4.2}, // end card plate
 ];
-export const MOONGATE_TOTAL_SECONDS = SHOTS.reduce((s, x) => s + x.seconds, 0);
-export const MOONGATE_DURATION_FRAMES = Math.round(MOONGATE_TOTAL_SECONDS * FPS);
+export const NOVAGATE_TOTAL_SECONDS = SHOTS.reduce((s, x) => s + x.seconds, 0);
+export const NOVAGATE_DURATION_FRAMES = Math.round(NOVAGATE_TOTAL_SECONDS * FPS);
 
-// Brand type: Lexend, same as moongate.one (--font-lexend)
+// Brand type: Lexend, same as novagate.one (--font-lexend)
 const {fontFamily: lexend} = loadFont('normal', {
   weights: ['300', '400', '500', '600'],
 });
@@ -100,13 +99,6 @@ const EndCard: React.FC = () => {
           transform: `translateY(${drift}px)`,
         }}
       >
-        <Img
-          src={staticFile('footage/moongate/logo-white.png')}
-          style={{
-            width: 170,
-            filter: 'drop-shadow(0 4px 40px rgba(0,0,0,0.6))',
-          }}
-        />
         <div style={{display: 'flex', alignItems: 'center', gap: 30}}>
           <div
             style={{
@@ -129,7 +121,7 @@ const EndCard: React.FC = () => {
               textShadow: '0 4px 50px rgba(0,0,0,0.6)',
             }}
           >
-            moongate
+            novagate
           </div>
         </div>
       </div>
@@ -169,7 +161,7 @@ export const Grain: React.FC = () => {
   );
 };
 
-export const MoongateFilm: React.FC = () => {
+export const NovaGateFilm: React.FC = () => {
   let from = 0;
   return (
     <AbsoluteFill style={{background: 'black'}}>

@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   AbsoluteFill,
-  Img,
   OffthreadVideo,
   Sequence,
   interpolate,
@@ -9,11 +8,11 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
-import {Grain, KineticText, BRAND_FONT} from './MoongateFilm';
+import {Grain, KineticText, BRAND_FONT} from './NovaGateFilm';
 
 // "Trade the narrative" teaser: narratives through history (cave -> Rome ->
-// America -> online -> trading) resolving on Moongate baskets. Same BULK-style
-// grammar as MoongateFilm: staccato cuts, serif copy, grain, aurora end card.
+// America -> online -> trading) resolving on NovaGate baskets. Same BULK-style
+// grammar as NovaGateFilm: staccato cuts, serif copy, grain, aurora end card.
 
 const FPS = 30;
 
@@ -25,12 +24,12 @@ type Shot = {
 };
 
 const SHOTS: Shot[] = [
-  {src: 'footage/moongate/s1.mp4', seconds: 1.0},
-  {src: 'footage/moongate/n1.mp4', seconds: 1.6, text: 'Narratives built tribes.'},
-  {src: 'footage/moongate/n2.mp4', seconds: 1.6, text: 'Narratives built empires.'},
-  {src: 'footage/moongate/n3.mp4', seconds: 1.6, text: 'Narratives built nations.'},
-  {src: 'footage/moongate/n4.mp4', seconds: 1.6, text: 'Narratives went viral.'},
-  {src: 'footage/moongate/n5.mp4', seconds: 1.8, text: 'Now they move markets.'},
+  {src: 'footage/novagate/s1.mp4', seconds: 1.0},
+  {src: 'footage/novagate/n1.mp4', seconds: 1.6, text: 'Narratives built tribes.'},
+  {src: 'footage/novagate/n2.mp4', seconds: 1.6, text: 'Narratives built empires.'},
+  {src: 'footage/novagate/n3.mp4', seconds: 1.6, text: 'Narratives built nations.'},
+  {src: 'footage/novagate/n4.mp4', seconds: 1.6, text: 'Narratives went viral.'},
+  {src: 'footage/novagate/n5.mp4', seconds: 1.8, text: 'Now they move markets.'},
 ];
 const PRODUCT_SECONDS = 2.4;
 const ENDCARD_SECONDS = 4.0;
@@ -41,7 +40,8 @@ export const NARRATIVES_DURATION_FRAMES = Math.round(
   NARRATIVES_TOTAL_SECONDS * FPS,
 );
 
-// Baskets UI beat: floating app panel over dark violet, slow push-in.
+// Baskets UI beat: floating app panel mockup (CSS, no real product
+// screenshot) over dark violet, slow push-in.
 const ProductBeat: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -60,17 +60,41 @@ const ProductBeat: React.FC = () => {
         opacity: fadeIn,
       }}
     >
-      <div style={{transform: `scale(${zoom}) translateY(-52px)`}}>
-        <Img
-          src={staticFile('footage/moongate/baskets-ui.png')}
-          style={{
-            width: 1300,
-            borderRadius: 18,
-            border: '1px solid rgba(168,85,247,0.35)',
-            boxShadow:
-              '0 40px 120px rgba(0,0,0,0.7), 0 0 90px rgba(168,85,247,0.25)',
-          }}
-        />
+      <div
+        style={{
+          transform: `scale(${zoom}) translateY(-52px)`,
+          width: 640,
+          borderRadius: 28,
+          padding: 40,
+          background: 'rgba(16, 8, 40, 0.9)',
+          border: '1px solid rgba(168,85,247,0.35)',
+          boxShadow: '0 40px 120px rgba(0,0,0,0.7), 0 0 90px rgba(168,85,247,0.25)',
+          fontFamily: BRAND_FONT,
+          color: 'white',
+        }}
+      >
+        <div style={{fontSize: 34, fontWeight: 500, marginBottom: 26, opacity: 0.9}}>
+          Baskets
+        </div>
+        {[
+          {label: 'AI Narratives', value: '+18.4%'},
+          {label: 'On-chain Gaming', value: '+9.1%'},
+          {label: 'Real World Assets', value: '+4.7%'},
+        ].map((row) => (
+          <div
+            key={row.label}
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              padding: '18px 0',
+              borderTop: '1px solid rgba(255,255,255,0.12)',
+              fontSize: 26,
+            }}
+          >
+            <span style={{opacity: 0.85}}>{row.label}</span>
+            <span style={{color: '#4ade80', fontWeight: 600}}>{row.value}</span>
+          </div>
+        ))}
       </div>
       <div
         style={{
@@ -115,14 +139,6 @@ const EndCard: React.FC = () => {
           transform: `translateY(${drift}px)`,
         }}
       >
-        <Img
-          src={staticFile('footage/moongate/logo-white.png')}
-          style={{
-            width: 150,
-            opacity: fade,
-            filter: 'drop-shadow(0 4px 40px rgba(0,0,0,0.6))',
-          }}
-        />
         <div
           style={{
             display: 'flex',
@@ -152,7 +168,7 @@ const EndCard: React.FC = () => {
               textShadow: '0 4px 50px rgba(0,0,0,0.6)',
             }}
           >
-            moongate
+            novagate
           </div>
         </div>
         <div
@@ -213,7 +229,7 @@ export const NarrativesFilm: React.FC = () => {
       >
         <AbsoluteFill>
           <OffthreadVideo
-            src={staticFile('footage/moongate/s9.mp4')}
+            src={staticFile('footage/novagate/s9.mp4')}
             muted
             style={{width: '100%', height: '100%', objectFit: 'cover'}}
           />

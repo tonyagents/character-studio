@@ -34,6 +34,6 @@ Add more characters by dropping animated `.glb` files into `public/models/` — 
 
 Sources: robot/soldier/xbot from three.js examples (CC0/Mixamo), fox from glTF-Sample-Models (CC-BY 4.0, PixelMannen).
 
-## MoonPay branding
+## Nova branding
 
-Default accent is MoonPay purple `#7D00FF`. The `moonpay-launch.json` scenario is the brand reference: dark purple gradient + stars + moon. For non-brand videos just change `accentColor` and `background`.
+Default accent is Nova purple `#7D00FF`. The `nova-launch.json` scenario is the brand reference: dark purple gradient + stars + moon. For non-brand videos just change `accentColor` and `background`.
